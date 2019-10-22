@@ -8,7 +8,7 @@
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,21 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
-	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="global_assets/js/main/jquery.min.js"></script>
+	<script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="global_assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	<script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
 	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -34,7 +42,7 @@
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
 			<a href="index.html" class="d-inline-block">
-				<img src="../../../../global_assets/images/logo_light.png" alt="">
+				<img src="global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
 
@@ -157,7 +165,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
@@ -168,7 +176,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Will Brason</a>
@@ -179,7 +187,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
@@ -190,7 +198,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
@@ -201,7 +209,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
@@ -236,7 +244,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -253,7 +261,7 @@
 
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -270,7 +278,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -286,7 +294,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -302,7 +310,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+										<img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -326,7 +334,7 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
+						<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
 						<span>Victoria</span>
 					</a>
 
@@ -368,7 +376,7 @@
 			<!-- Sidebar content -->
 			<div class="sidebar-content">
 
-				<!-- User menu -->
+				<!-- User menu --><!--
 				<div class="sidebar-user">
 					<div class="card-body">
 						<div class="media">
@@ -399,14 +407,13 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">
+							<a href="index.html" class="nav-link active">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
-						</li>
+						</li><!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -475,7 +482,7 @@
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
 						<!-- /main -->
 
-						<!-- Forms -->
+						<!-- Forms --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
@@ -532,7 +539,7 @@
 						</li>
 						<!-- /forms -->
 
-						<!-- Components -->
+						<!-- Components --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -637,7 +644,7 @@
 						</li>
 						<!-- /components -->
 
-						<!-- Layout -->
+						<!-- Layout --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -802,7 +809,7 @@
 						</li>
 						<!-- /layout -->
 
-						<!-- Data visualization -->
+						<!-- Data visualization --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -906,7 +913,7 @@
 						</li>
 						<!-- /data visualization -->
 
-						<!-- Extensions -->
+						<!-- Extensions --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -955,7 +962,7 @@
 						<!-- /extensions -->
 
 						<!-- Tables -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Capital Humano</div> <i class="icon-menu" title="Tables"></i></li><!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
@@ -964,26 +971,27 @@
 								<li class="nav-item"><a href="table_borders.html" class="nav-link">Table borders</a></li>
 								<li class="nav-item"><a href="table_styling.html" class="nav-link">Table styling</a></li>
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
-							</ul>
+							</ul>-->
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
+							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Empleados</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Basic initialization</a></li>
-								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
-								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
+								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Enlistar</a></li>
+								<!--<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
 								<li class="nav-item"><a href="datatable_api.html" class="nav-link">Using API</a></li>
-								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>
+								<li class="nav-item"><a href="datatable_data_sources.html" class="nav-link">Data sources</a></li>-->
 							</ul>
 						</li>
+						
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Data tables extensions</span></a>
+							<a href="#" class="nav-link"><i class="icon-alignment-unalign"></i> <span>Departamentos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables extensions">
-								<li class="nav-item"><a href="datatable_extension_reorder.html" class="nav-link">Columns reorder</a></li>
-								<li class="nav-item"><a href="datatable_extension_row_reorder.html" class="nav-link">Row reorder</a></li>
-								<li class="nav-item"><a href="datatable_extension_fixed_columns.html" class="nav-link">Fixed columns</a></li>
-								<li class="nav-item"><a href="datatable_extension_fixed_header.html" class="nav-link">Fixed header</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="formulario_editar.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="datatable_extension_fixed_columns.html" class="nav-link">Listar</a></li>
+								<li class="nav-item"><a href="datatable_extension_fixed_header.html" class="nav-link">Eliminar</a></li><!--
 								<li class="nav-item"><a href="datatable_extension_autofill.html" class="nav-link">Auto fill</a></li>
 								<li class="nav-item"><a href="datatable_extension_key_table.html" class="nav-link">Key table</a></li>
 								<li class="nav-item"><a href="datatable_extension_scroller.html" class="nav-link">Scroller</a></li>
@@ -995,35 +1003,40 @@
 										<li class="nav-item"><a href="datatable_extension_buttons_flash.html" class="nav-link">Flash buttons</a></li>
 										<li class="nav-item"><a href="datatable_extension_buttons_print.html" class="nav-link">Print buttons</a></li>
 										<li class="nav-item"><a href="datatable_extension_buttons_html5.html" class="nav-link">HTML5 buttons</a></li>
-									</ul>
+									</ul>-->
 								</li>
-								<li class="nav-item"><a href="datatable_extension_colvis.html" class="nav-link">Columns visibility</a></li>
+								<!--<li class="nav-item"><a href="datatable_extension_colvis.html" class="nav-link">Columns visibility</a></li>-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-file-spreadsheet"></i> <span>Handsontable</span></a>
+							<a href="#" class="nav-link"><i class="icon-file-spreadsheet"></i> <span>Empresas</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Handsontable">
-								<li class="nav-item"><a href="handsontable_basic.html" class="nav-link">Basic configuration</a></li>
-								<li class="nav-item"><a href="handsontable_advanced.html" class="nav-link">Advanced setup</a></li>
-								<li class="nav-item"><a href="handsontable_cols.html" class="nav-link">Column features</a></li>
-								<li class="nav-item"><a href="handsontable_cells.html" class="nav-link">Cell features</a></li>
-								<li class="nav-item"><a href="handsontable_types.html" class="nav-link">Basic cell types</a></li>
+								<li class="nav-item"><a href="handsontable_basic.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="handsontable_advanced.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="handsontable_cols.html" class="nav-link">Listar</a></li>
+								<li class="nav-item"><a href="handsontable_cells.html" class="nav-link">Eliminar</a></li>
+								<!--<li class="nav-item"><a href="handsontable_types.html" class="nav-link">Basic cell types</a></li>
 								<li class="nav-item"><a href="handsontable_custom_checks.html" class="nav-link">Custom &amp; checkboxes</a></li>
 								<li class="nav-item"><a href="handsontable_ac_password.html" class="nav-link">Autocomplete &amp; password</a></li>
 								<li class="nav-item"><a href="handsontable_search.html" class="nav-link">Search</a></li>
-								<li class="nav-item"><a href="handsontable_context.html" class="nav-link">Context menu</a></li>
+								<li class="nav-item"><a href="handsontable_context.html" class="nav-link">Context menu</a></li>-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-versions"></i> <span>Responsive tables</span></a>
+							<a href="#" class="nav-link"><i class="icon-versions"></i> <span>Vacaciones</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Responsive tables">
-								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
-								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
+								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="handsontable_types.html" class="nav-link">Listar</a></li>
+								<li class="nav-item"><a href="handsontable_custom_checks.html" class="nav-link">Eliminar</a></li><!--
+								<li class="nav-item"><a href="handsontable_ac_password.html" class="nav-link">Autocomplete &amp; password</a></li>
+								<li class="nav-item"><a href="handsontable_search.html" class="nav-link">Search</a></li>
+								<li class="nav-item"><a href="handsontable_context.html" class="nav-link">Context menu</a></li>-->
 							</ul>
 						</li>
 						<!-- /tables -->
 
-						<!-- Page kits -->
+						<!-- Page kits --><!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1104,18 +1117,18 @@
 									</ul>
 								</li>
 							</ul>
-						</li>
+						</li>-->
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-people"></i> <span>User pages</span></a>
+							<a href="#" class="nav-link"><i class="icon-people"></i> <span>Transporte Escolar</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="User pages">
-								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">User list</a></li>
-								<li class="nav-item"><a href="user_pages_cards.html" class="nav-link">User cards</a></li>
+								<li class="nav-item"><a href="pago_transporte.html" class="nav-link">Pagos</a></li><!--
+								<li class="nav-item"><a href="user_pages_cards.html" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="user_pages_profile.html" class="nav-link">Simple profile</a></li>
 								<li class="nav-item"><a href="user_pages_profile_tabbed.html" class="nav-link">Tabbed profile</a></li>
 								<li class="nav-item"><a href="user_pages_profile_cover.html" class="nav-link">Profile with cover</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-cube3"></i> <span>Application pages</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Application pages">
 								<li class="nav-item nav-item-submenu">
@@ -1164,25 +1177,27 @@
 										<li class="nav-item"><a href="learning_detailed.html" class="nav-link">Detailed course</a></li>
 									</ul>
 								</li>
-								<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+								<li class="nav-item nav-item-submenu">
 									<a href="#" class="nav-link">Ecommerce set</a>
 									<ul class="nav nav-group-sub">
 										<li class="nav-item"><a href="ecommerce_product_list.html" class="nav-link">Product list</a></li>
 										<li class="nav-item"><a href="ecommerce_product_grid.html" class="nav-link">Product grid</a></li>
 										<li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">Orders history</a></li>
 										<li class="nav-item"><a href="ecommerce_customers.html" class="nav-link">Customers</a></li>
-										<li class="nav-item"><a href="ecommerce_pricing.html" class="nav-link active">Pricing tables</a></li>
+										<li class="nav-item"><a href="ecommerce_pricing.html" class="nav-link">Pricing tables</a></li>
 									</ul>
-								</li>
+								</li>-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-atom2"></i> <span>Widgets</span></a>
+							<a href="#" class="nav-link"><i class="icon-atom2"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Widgets">
-								<li class="nav-item"><a href="widgets_content.html" class="nav-link">Content widgets</a></li>
-								<li class="nav-item"><a href="widgets_stats.html" class="nav-link">Statistics widgets</a></li>
+								<li class="nav-item"><a href="agregar_tutorias.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="editar_tutorias.html" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="ecommerce_pricing.html" class="nav-link">Listar</a></li>
+								<li class="nav-item"><a href="ecommerce_customers.html" class="nav-link">Eliminar</a></li><!--
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 							</ul>
 						</li>
 						<!-- /page kits -->
@@ -1205,7 +1220,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">ECommerce</span> - Pricing Tables</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorias</span> - Listar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1263,9 +1278,9 @@
 				<!-- Pricing table -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Table view
+						Lista de Tutorias
 					</h6>
-					<span class="text-muted d-block">Simple table with content</span>
+					<span class="text-muted d-block">Tabla con Datos de Tutorias</span>
 				</div>
 
 				<div class="card">
@@ -1273,87 +1288,93 @@
 						<table class="table table-hover table-striped table-bordered table-lg text-center">
 			    			<thead>
 			    				<tr>
-			    					<th class="text-left">Choose a plan</th>
+			    					<th class="font-weight-semibold mb-0">ID</th>
 			    					<th>
-			    						<h6 class="font-weight-semibold my-1">Basic</h6>
+			    						
 			    						<h4 class="font-weight-semibold mb-0">
-			    							€25
-			    							<span class="font-size-base text-muted font-weight-normal">/ month</span>
+			    							1
 		    							</h4>
 		    						</th>
 			    					<th>
-			    						<h6 class="font-weight-semibold my-1">Professional</h6>
+			    						
 			    						<h4 class="font-weight-semibold mb-0">
-			    							€35
-			    							<span class="font-size-base text-muted font-weight-normal">/ month</span>
+			    							2
 		    							</h4>
 		    						</th>
 			    					<th>
-			    						<h6 class="font-weight-semibold my-1">Business</h6>
 			    						<h4 class="font-weight-semibold mb-0">
-			    							€49
-			    							<span class="font-size-base text-muted font-weight-normal">/ month</span>
+			    							3
 		    							</h4>
 		    						</th>
 			    					<th>
-			    						<h6 class="font-weight-semibold my-1">Enterprise</h6>
 			    						<h4 class="font-weight-semibold mb-0">
-			    							€60
-			    							<span class="font-size-base text-muted font-weight-normal">/ month</span>
+			    							4
+		    							</h4>
+		    						</th>
+		    						<th>
+			    						<h4 class="font-weight-semibold mb-0">
+			    							5
 		    							</h4>
 		    						</th>
 			    				</tr>
 			    			</thead>
 			    			<tbody>
 			    				<tr>
-			    					<td class="text-left">Disk storage</td>
-			    					<td>25Gb</td>
-			    					<td>75Gb</td>
-			    					<td>150Gb</td>
-			    					<td>256Gb</td>
+			    					<td class="text-left">Nombre del Alumno</td>
+			    					<td>Juan de Dios</td>
+			    					<td>Photographer</td>
+			    					<td>Jorge Arturo</td>
+			    					<td>Leo Messi</td>
+			    					<td>Fierro Pariente</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Monthly bandwidth</td>
-			    					<td>25GB</td>
-			    					<td>50GB</td>
-			    					<td>100GB</td>
-			    					<td>Unlimited</td>
+			    					<td class="text-left">Matricula</td>
+			    					<td>1930549</td>
+			    					<td>1930974</td>
+			    					<td>1930384</td>
+			    					<td>1930198</td>
+			    					<td>1930677</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Domain names</td>
-			    					<td>1</td>
-			    					<td>10</td>
-			    					<td>20</td>
-			    					<td>Unlimited</td>
+			    					<td class="text-left">Carrera</td>
+			    					<td>ITI</td>
+			    					<td>ITI</td>
+			    					<td>ITI</td>
+			    					<td>ITI</td>
+			    					<td>ITI</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Subdomains</td>
-			    					<td>5</td>
-			    					<td>15</td>
-			    					<td>50</td>
-			    					<td>Unlimited</td>
+			    					<td class="text-left">Nombre del Tutor</td>
+			    					<td>Fierro Humberto</td>
+			    					<td>Fierro Humberto</td>
+			    					<td>Fierro Humberto</td>
+			    					<td>Fierro Humberto</td>
+			    					<td>Fierro Humberto</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Email accounts</td>
-			    					<td>10</td>
-			    					<td>30</td>
-			    					<td>50</td>
-			    					<td>Unlimited</td>
+			    					<td class="text-left">ID escolar (Tutor)</td>
+			    					<td>09305978</td>
+			    					<td>09305978</td>
+			    					<td>09305978</td>
+			    					<td>09305978</td>
+			    					<td>09305978</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Site builder</td>
-			    					<td><i class="icon-cancel-square2 text-danger"></i></td>
-			    					<td><i class="icon-cancel-square2 text-danger"></i></td>
-			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
-			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
+			    					<td class="text-left">Tema Atendido</td>
+			    					<td>Dudas de Bootstrap</td>
+			    					<td>Asuntos Personales</td>
+			    					<td>Cuestiones de la Clase</td>
+			    					<td>Materias Reprobadas</td>
+			    					<td>Retraso Escolar</td>
 			    				</tr>
 			    				<tr>
-			    					<td class="text-left">Backups</td>
-			    					<td><i class="icon-cancel-square2 text-danger"></i></td>
-			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
-			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
-			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
-			    				</tr>
+			    					<td class="text-left">Fecha de la Sesión</td>
+			    					<td>22/10/19</td>
+			    					<td>23/10/19</td>
+			    					<td>21/10/19</td>
+			    					<td>27/10/19</td>
+			    					<td>17/10/19</td>
+			    				</tr><!--
 			    				<tr>
 			    					<td class="text-left">CPanel</td>
 			    					<td><i class="icon-cancel-square2 text-danger"></i></td>
@@ -1375,13 +1396,23 @@
 			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
 			    					<td><i class="icon-checkbox-checked2 text-success"></i></td>
 			    				</tr>
+-->
+			    				<tr class="table-border-solid">
+			    					<td>Editar</td>
+			    					<td><a class="btn bg-blue" href="editar_tutorias.html"><i class="icon-cart mr-2"></i> Editar</a></td>
+			    					<td><a class="btn bg-blue" href="editar_tutorias.html"><i class="icon-cart mr-2"></i> Editar</a></td>
+			    					<td><a class="btn bg-blue" href="editar_tutorias.html"><i class="icon-cart mr-2"></i> Editar</a></td>
+			    					<td><a class="btn bg-blue" href="editar_tutorias.html"><i class="icon-cart mr-2"></i> Editar</a></td>
+			    					<td><a class="btn bg-blue" href="editar_tutorias.html"><i class="icon-cart mr-2"></i> Editar</a></td>
+			    				</tr>
 
 			    				<tr class="table-border-solid">
-			    					<td> </td>
-			    					<td><a class="btn bg-blue" href="#"><i class="icon-cart mr-2"></i> Order</a></td>
-			    					<td><a class="btn bg-blue" href="#"><i class="icon-cart mr-2"></i> Order</a></td>
-			    					<td><a class="btn bg-blue" href="#"><i class="icon-cart mr-2"></i> Order</a></td>
-			    					<td><a class="btn bg-blue" href="#"><i class="icon-cart mr-2"></i> Order</a></td>
+			    					<td>Elimnar</td>
+			    					<td><a class="btn bg-success-400" href="#"><i class="icon-cart mr-2"></i> Eliminar</a></td>
+			    					<td><a class="btn bg-success-400" href="#"><i class="icon-cart mr-2"></i> Eliminar</a></td>
+			    					<td><a class="btn bg-success-400" href="#"><i class="icon-cart mr-2"></i> Eliminar</a></td>
+			    					<td><a class="btn bg-success-400" href="#"><i class="icon-cart mr-2"></i> Eliminar</a></td>
+			    					<td><a class="btn bg-success-400" href="#"><i class="icon-cart mr-2"></i> Eliminar</a></td>
 			    				</tr>
 			    			</tbody>
 			    		</table>
@@ -1390,7 +1421,7 @@
 	    		<!-- /pricing table -->
 
 
-                <!-- Pricing table two -->
+                <!-- Pricing table two --><!--
 				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
 						Seamless cards
@@ -1470,7 +1501,7 @@
                 <!-- /pricing table two -->
 
 
-	    		<!-- Pricing table one -->
+	    		<!-- Pricing table one --><!--
 				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
 						Separate boxes
@@ -1558,7 +1589,7 @@
                 <!-- /pricing table one -->
 
 
-                <!-- Color variations -->
+                <!-- Color variations --><!--
 				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
 						Color highlight

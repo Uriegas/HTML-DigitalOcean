@@ -1220,7 +1220,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">ECommerce</span> - Customers</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorias</span> - Agregar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1237,8 +1237,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="ecommerce_orders_history.html" class="breadcrumb-item">ECommerce</a>
-							<span class="breadcrumb-item active">Customers</span>
+							<a href="handsontable_basic.html" class="breadcrumb-item">Handsontable</a>
+							<span class="breadcrumb-item active">Basic</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1275,10 +1275,34 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Customers -->
+				<!-- Basic config --
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h6 class="card-title">Customers</h6>
+						<h5 class="card-title">Basic configuration</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+<!--
+					<div class="card-body">
+						<p class="mb-3">Handsontable is a data grid component with an Excel-like appearance. Built in JavaScript, it integrates with any data source with peak efficiency. It comes with powerful features like data validation, sorting, grouping, data binding, formula support or column ordering. This example demonstrates a very basic configuration with enabled columns and rows header. Cells are generated with handsontable helper.</p>
+
+						<div class="hot-container">
+							<div id="hot_basic"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic config -->
+
+
+				<!-- Column headers --><!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Column headers</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1289,1481 +1313,950 @@
 					</div>
 
 					<div class="card-body">
-						<div class="chart-container">
-							<div class="chart has-fixed-height" id="customers_chart"></div>
+						<p class="mb-3">The following example demonstrates <strong>headers</strong> added to the table <strong>columns</strong>. To add columns with default letters count, set <code>colHeaders</code> option to <code>true</code> in the table configuration. If a function is set, the index of the column is passed as a parameter. If table doesn't have scrolling, headers are fixed to the top of the page when scrolling the page. Otherwise headers are sticked to the top of table's container.</p>
+
+						<div class="hot-container">
+							<div id="hot_col_headers"></div>
 						</div>
 					</div>
-
-					<table class="table table-striped text-nowrap table-customers">
-						<thead>
-							<tr>
-								<th>Customer</th>
-								<th>Registered</th>
-								<th>Email</th>
-								<th>Payment method</th>
-								<th>Orders history</th>
-								<th>Value</th>
-								<th>Actions</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">James Alexander</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.12.30
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>July 12, 2016</td>
-								<td><a href="#">james@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">25 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">34 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 322.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Jeremy Victorino</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.03.05
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>September 4, 2016</td>
-								<td><a href="#">jeremy@interface.club</a></td>
-								<td>Cash on delivery</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">43 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">65 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 1,432.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Margo Baker</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.03.27
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>July 10, 2016</td>
-								<td><a href="#">margo@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">38 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">53 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 489.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Monica Smith</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.10.03
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>June 27, 2016</td>
-								<td><a href="#">monica@interface.club</a></td>
-								<td>Cash on delivery</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">15 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">235 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 940.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Jemmy Royle</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.11.25
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>January 2, 2016</td>
-								<td><a href="#">jemmy@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">23 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">65 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 772.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Ashlynn Ben</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.04.14
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>February 25, 2016</td>
-								<td><a href="#">ashlynn@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">23 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">75 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 662.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Ray Sammy</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.02.20
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>March 20, 2016</td>
-								<td><a href="#">ray@interface.club</a></td>
-								<td>Visa</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">42 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">542 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 499.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Brian Leslie</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.12.24
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>July 12, 2016</td>
-								<td><a href="#">brian@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">14 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">45 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 946.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Patrick Marilynn</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.09.28
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>October 4, 2016</td>
-								<td><a href="#">patrick@interface.club</a></td>
-								<td>Wire transfer</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">24 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">76 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 538.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Roland Cydney</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.02.12
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>August 1, 2016</td>
-								<td><a href="#">roland@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">27 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">236 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 432.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Deanna Joss</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.05.20
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>May 17, 2016</td>
-								<td><a href="#">deanna@interface.club</a></td>
-								<td>Visa</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">53 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">236 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 472.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Dawn Justin</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.06.17
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>May 12, 2016</td>
-								<td><a href="#">dawn@interface.club</a></td>
-								<td>Wire transfer</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">63 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">75 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 402.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Blondie Madison</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.01.26
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>March 26, 2016</td>
-								<td><a href="#">blondie@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">12 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">53 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 839.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Derryl Carrie</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.09.15
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>July 26, 2016</td>
-								<td><a href="#">derryl@interface.club</a></td>
-								<td>Visa</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">43 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">90 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 471.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Vincent Doris</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.02.23
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>June 25, 2016</td>
-								<td><a href="#">vincent@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">41 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">76 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 902.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Diantha Royston</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.02.04
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>September 25, 2016</td>
-								<td><a href="#">diantha@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">7 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">234 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 543.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Lilian Knox</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.05.18
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>March 5, 2016</td>
-								<td><a href="#">lilian@interface.club</a></td>
-								<td>Visa</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">8 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">34 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 2,472.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Toria Eveline</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.03.28
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>August 26, 2016</td>
-								<td><a href="#">toria@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">53 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">90 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 2,372.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Tiffany Willemina</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.07.29
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>November 19, 2016</td>
-								<td><a href="#">tiffany@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">21 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">42 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 1,930.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Trenton Alison</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.09.16
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>July 25, 2016</td>
-								<td><a href="#">trenton@interface.club</a></td>
-								<td>Wire transfer</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">5 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">29 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 830.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Brandon Gilbert</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.11.25
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>December 26, 2016</td>
-								<td><a href="#">brandon@interface.club</a></td>
-								<td>Paypal</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">15 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">89 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 903.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Troy Webster</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.10.24
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>May 29, 2016</td>
-								<td><a href="#">troy@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">12 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">53 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 394.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Elbert Cailyn</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.08.20
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>February 28, 2016</td>
-								<td><a href="#">elbert@interface.club</a></td>
-								<td>Visa</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">10 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">93 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 192.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Coen Grant</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.12.24
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>June 17, 2016</td>
-								<td><a href="#">coen@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">19 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">75 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 252.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-
-							<tr>
-								<td>
-									<div class="media">
-										<div class="mr-3">
-											<a href="user_pages_profile_tabbed.html">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="40" height="40" class="rounded-circle" alt="">
-											</a>
-										</div>
-
-										<div class="media-body align-self-center">
-											<a href="user_pages_profile_tabbed.html" class="font-weight-semibold">Charles Elian</a>
-											<div class="text-muted font-size-sm">
-												Latest order: 2016.01.28
-											</div>
-										</div>
-									</div>
-								</td>
-								<td>September 21, 2016</td>
-								<td><a href="#">charles@interface.club</a></td>
-								<td>MasterCard</td>
-								<td>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<i class="icon-infinite font-size-base text-warning mr-2"></i>
-											Pending:
-											<a href="#">3 orders</a>
-										</li>
-
-										<li>
-											<i class="icon-checkmark3 font-size-base text-success mr-2"></i>
-											Processed:
-											<a href="#">19 orders</a>
-										</li>
-									</ul>
-								</td>
-								<td>
-									<h6 class="mb-0 font-weight-semibold">&euro; 2,345.00</h6>
-								</td>
-								<td class="text-right">
-									<div class="list-icons">
-										<div class="list-icons-item dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu7"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Invoices</a>
-												<a href="#" class="dropdown-item"><i class="icon-cube2"></i> Shipping details</a>
-												<a href="#" class="dropdown-item"><i class="icon-credit-card"></i> Billing details</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item"><i class="icon-warning2"></i> Report problem</a>
-											</div>
-										</div>
-									</div>
-								</td>
-								<td class="pl-0"></td>
-							</tr>
-						</tbody>
-					</table>
 				</div>
-				<!-- /customers -->
+				<!-- /column headers -->
+
+
+				<!-- Row headers --><!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Row headers</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">The following example demonstrates <strong>headers</strong> added to the table <strong>rows</strong>. To add rows with default letters count, set <code>rowHeaders</code> option to <code>true</code> in the table configuration. If a function is set, the index of the column is passed as a parameter. If table has horizontal scrolling, row headers column is sticked to the left of table's container.</p>
+
+						<div class="hot-container">
+							<div id="hot_row_headers"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /row headers -->
+
+
+				<!-- Custom header text --><!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom header text</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">The following example demonstrates rows and columns headers with custom text using <code>colHeaders</code> and <code>rowHeaders</code> options. Setting <code>true</code> or <code>false</code> will enable or disable the default column headers (A, B, C). You can also define an array <code>['One', 'Two', 'Three', ...]</code> or a function to define the headers. If a function is set the index of the column is passed as a parameter.</p>
+
+						<div class="hot-container">
+							<div id="hot_headers"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom header text -->
+
+
+				<!-- Comments --><!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Comments</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">The following example demonstrates optional comments added to the specified cell using <code>comments</code> option. Setting this option to <code>true</code> allows you to add and remove cell comments through the context menu. To initialize Handsontable with predefined comments, provide comment cell property: <code>{row: 1, col: 1, comment: "Test comment"}</code>. HTML content isn't supported at the moment.</p>
+
+						<div class="hot-container">
+							<div id="hot_comments"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /comments -->
+
+
+				<!-- Custom borders --><!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom borders</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">This example demonstrates custom border options: range, sizes, width and color. If <code>customBorders</code> is set to <code>true</code>, enables Custom Borders plugin, which enables applying custom borders through the context menu (configurable with context menu key borders). To initialize Handsontable with predefined custom borders, provide cell coordinates and border styles in form of an array.</p>
+
+						<div class="hot-container hot-scrollable">
+							<div id="hot_borders"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /custom borders -->
 
 			</div>
 			<!-- /content area -->
+
+
+			<!-- Form inputs -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Agregar Tutoria</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-4">En esta seccion podra agregar nuevas tutorias solo ingresando los datos necesarios.</p>
+
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos Principales del Alumno</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre del Alumno</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Matricula</label>
+									<div class="col-lg-10">
+										<input type="password" class="form-control">
+									</div>
+								</div>
+
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Carrera</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos Principales del Tutor</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Nombre Completo</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">RFC</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">ID escolar</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos de la Tutoria</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Tema Atendido</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+<!--
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Resumen Departamento</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" readonly value="En esta seccion se despliega la informacion introducida">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Disabled field</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" disabled value="disabled">
+									</div>
+								</div>
+-->
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Fecha de la Sesión</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+<!--
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Disabled autocomplete</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="Autocomplete is off" autocomplete="off">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Fundacion</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" maxlength="4" placeholder="Introduzca la fecha en que se creó la empresa">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 cursor-pointer" for="clickable-label">Focus on label click</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" id="clickable-label" placeholder="Field focus on label click">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Static text</label>
+									<div class="col-lg-10">
+										<div class="form-control-plaintext">This is a static text</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Descripción</label>
+									<div class="col-lg-10">
+										<textarea rows="3" cols="3" class="form-control" placeholder="Escriba una breve descripción de la empresa"></textarea>
+									</div>
+								</div>
+							</fieldset>
+<!--
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Basic selects</legend>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Single select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control">
+			                                <option value="opt1">Default select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Styled select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control form-control-uniform" data-fouc>
+			                                <option value="opt1">Styled select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Custom BS select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="custom-select">
+			                                <option value="opt1">Styled select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Multiple select</label>
+									<div class="col-lg-10">
+			                            <select multiple="multiple" class="form-control">
+			                                <option selected>Amsterdam</option>      
+			                                <option selected>Atlanta</option>
+			                                <option>Baltimore</option>
+			                                <option>Boston</option>
+			                                <option>Buenos Aires</option>
+			                                <option>Calgary</option>
+			                                <option selected>Chicago</option>
+			                                <option>Denver</option>
+			                                <option>Dubai</option>
+			                                <option>Frankfurt</option>
+			                                <option>Hong Kong</option>
+			                                <option>Honolulu</option>
+			                                <option>Houston</option>
+			                                <option>Kuala Lumpur</option>
+			                                <option>London</option>
+			                                <option>Los Angeles</option>
+			                                <option>Melbourne</option>
+			                                <option>Mexico City</option>
+			                                <option>Miami</option>
+			                                <option>Minneapolis</option>
+			                            </select>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Basic file inputs</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default file input</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control h-auto">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Styled file input</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control-uniform" data-fouc>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Custom BS file input</label>
+									<div class="col-lg-10">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFile">
+											<label class="custom-file-label" for="customFile">Choose file</label>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Form helpers</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Text form helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted">Left aligned helper</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted text-center">Centered helper</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted text-right">Right aligned helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Full width badge helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-primary form-text text-left">Left aligned badge</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-danger form-text">Centered badge</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-info form-text text-right">Right aligned badge</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Block badge helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text">
+													<span class="badge badge-primary">Left aligned badge</span>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text text-center">
+													<span class="badge badge-danger">Centered badge</span>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text text-right">
+													<span class="badge badge-info text-right">Right aligned badge</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inline text helper</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-lg-6 mt-1 mt-lg-0 align-self-center">
+												<span class="text-muted">Inline text helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inline badge helper</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-lg-6 mt-1 mt-lg-0 align-self-center">
+												<span class="badge bg-teal">Inline badge helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Input icons</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Input with icons</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control form-control-lg" placeholder="Left icon, input large">
+													<div class="form-control-feedback form-control-feedback-lg">
+														<i class="icon-make-group"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control" placeholder="Left icon, input default">
+													<div class="form-control-feedback">
+														<i class="icon-droplets"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control form-control-sm" placeholder="Left icon, input small">
+													<div class="form-control-feedback form-control-feedback-sm">
+														<i class="icon-pin-alt"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control form-control-lg" placeholder="Right icon, input large">
+													<div class="form-control-feedback form-control-feedback-lg">
+														<i class="icon-make-group"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control" placeholder="Right icon, input default">
+													<div class="form-control-feedback">
+														<i class="icon-droplets"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control form-control-sm" placeholder="Right icon, input small">
+													<div class="form-control-feedback form-control-feedback-sm">
+														<i class="icon-pin-alt"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Input with spinners</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control" placeholder="Left spinner">
+													<div class="form-control-feedback">
+														<i class="icon-spinner2 spinner"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control" placeholder="Right spinner">
+													<div class="form-control-feedback">
+														<i class="icon-spinner2 spinner"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Validation states</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid state</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-success" placeholder="Valid state">
+										<span class="form-text text-success">Valid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid state with icon</label>
+									<div class="col-lg-10">
+										<div class="form-group-feedback form-group-feedback-right">
+											<input type="text" class="form-control border-success" placeholder="Valid state">
+											<div class="form-control-feedback text-success">
+												<i class="icon-checkmark-circle"></i>
+											</div>
+										</div>
+										<span class="form-text text-success">Valid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid state</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-danger" placeholder="Invalid state">
+										<span class="form-text text-danger">Invalid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid state with icon</label>
+									<div class="col-lg-10">
+										<div class="form-group-feedback form-group-feedback-right">
+											<input type="text" class="form-control border-danger" placeholder="Invalid state">
+											<div class="form-control-feedback text-danger">
+												<i class="icon-cancel-circle2"></i>
+											</div>
+										</div>
+										<span class="form-text text-danger">Invalid state helper</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Text options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Light text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-light" placeholder="Input with light text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Semibold text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-semibold" placeholder="Input with semibold text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Bold text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-bold" placeholder="Input with bold text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Capitalized text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-capitalize" placeholder="Input with capitalized text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Centered text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-center" placeholder="Input with centered text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Right aligned text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-right" placeholder="Input with right aligned text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Uppercase text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-uppercase" placeholder="Input with uppercase text">
+										<span class="form-text text-muted">Other text options work as well</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Field options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Tooltip on focus</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" data-popup="tooltip" data-trigger="focus" title="Tooltip on focus" placeholder="Click on input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Tooltip on hover</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" data-popup="tooltip" title="Tooltip on hover" placeholder="Hover on input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Rounded input</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control rounded-round" placeholder="Rounded input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Roundless input</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control rounded-0" placeholder="Roundless input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Fixed input sizing</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-3">
+												<input type="text" class="form-control" placeholder=".col-3">
+											</div>
+
+											<div class="col-4">
+												<input type="text" class="form-control" placeholder=".col-4">
+											</div>
+
+											<div class="col-5">
+												<input type="text" class="form-control" placeholder=".col-5">
+											</div>
+										</div>
+										<span class="form-text text-muted">Available in 12 columns sizes since it's based on 12 columns grid</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Sizing options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-form-label-lg col-lg-2">Large size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control form-control-lg" placeholder=".col-form-label-lg .form-control-lg">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder=".col-form-label .form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-form-label-sm col-lg-2">Small size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control form-control-sm" placeholder=".col-form-label-sm .form-control-sm">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inputs only</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input class="form-control form-control-lg" type="text" placeholder="Large input height">
+												</div>
+
+												<div class="form-group">
+													<input class="form-control" type="text" placeholder="Default input height">
+												</div>
+
+												<div class="form-group">
+													<input class="form-control form-control-sm" type="text" placeholder="Small input height">
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<select class="form-control form-control-lg">
+					                                    <option value="opt1">Large select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+
+												<div class="form-group">
+													<select class="form-control">
+					                                    <option value="opt1">Default select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+
+												<div class="form-group">
+													<select class="form-control form-control-sm">
+					                                    <option value="opt1">Small select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Color options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Text color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control text-violet" value="Custom text color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Border color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-teal border-1" placeholder="Custom border color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Background color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control bg-slate-600 border-slate-600 border-1" placeholder="Custom background color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Select color</label>
+									<div class="col-lg-10">
+										<select class="form-control bg-indigo-400 border-indigo-400">
+		                                    <option value="opt1">Custom select color</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</div>
+								</div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Styled select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control form-control-uniform-custom">
+			                                <option value="opt1">Custom styled select color</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">File input color</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control-uniform-custom">
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Type options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Datetime</label>
+									<div class="col-md-10">
+										<input class="form-control" type="datetime-local" name="datetime-local">
+										<span class="form-text text-muted">Using <code>input type="datetime-local"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Date</label>
+									<div class="col-md-10">
+										<input class="form-control" type="date" name="date">
+										<span class="form-text text-muted">Using <code>input type="date"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Month</label>
+									<div class="col-md-10">
+										<input class="form-control" type="month" name="month">
+										<span class="form-text text-muted">Using <code>input type="month"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Time</label>
+									<div class="col-md-10">
+										<input class="form-control" type="time" name="time">
+										<span class="form-text text-muted">Using <code>input type="time"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Week</label>
+									<div class="col-md-10">
+										<input class="form-control" type="week" name="week">
+										<span class="form-text text-muted">Using <code>input type="week"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Number</label>
+									<div class="col-md-10">
+										<input class="form-control" type="number" name="number">
+										<span class="form-text text-muted">Using <code>input type="number"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Email</label>
+									<div class="col-md-10">
+										<input class="form-control" type="email" name="email">
+										<span class="form-text text-muted">Using <code>input type="email"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">URL</label>
+									<div class="col-md-10">
+										<input class="form-control" type="url" name="url">
+										<span class="form-text text-muted">Using <code>input type="url"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Search</label>
+									<div class="col-md-10">
+										<input class="form-control" type="search" name="search">
+										<span class="form-text text-muted">Using <code>input type="search"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Tel</label>
+									<div class="col-md-10">
+										<input class="form-control" type="tel" name="tel">
+										<span class="form-text text-muted">Using <code>input type="tel"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Color</label>
+									<div class="col-md-10">
+										<input class="form-control" type="color" name="color">
+										<span class="form-text text-muted">Using <code>input type="color"</code></span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Range</label>
+									<div class="col-md-10">
+										<input class="form-control" type="range" name="range" min="0" max="10">
+										<span class="form-text text-muted">Using <code>input type="range"</code></span>
+									</div>
+								</div>
+							</fieldset>
+-->
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Enviar <i class="icon-paperplane ml-2"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- /form inputs -->
 
 
 			<!-- Footer -->
