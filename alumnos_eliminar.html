@@ -1220,7 +1220,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Empresas</span> - Eliminar</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alumnos</span> - Eliminar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1268,7 +1268,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			<!-- /page header -->
 
 
@@ -1279,130 +1278,88 @@
 				<!-- Basic initialization -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Eliminar Empresas</h5>
+						<h5 class="card-title">Eliminar Alumnos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
+								<tr>
+									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_iconified">Eliminar <i class="icon-trash"></i></button></td>
+								</tr>
 		                		<a class="list-icons-item" data-action="collapse"></a>
 		                		<a class="list-icons-item" data-action="reload"></a>
 		                		<a class="list-icons-item" data-action="remove"></a>
 		                	</div>
-		                	<tr>
-									<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_iconified">Eliminar <i class="icon-trash"></i></button></td>
-								</tr>
 	                	</div>
 					</div>
 
 
-	            <!-- Iconified modal -->
-				<div id="modal_iconified" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title"><i class="icon-menu7 mr-2"></i> &nbsp;Eliminar Empresas</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<div class="alert alert-info alert-dismissible alert-styled-left border-top-0 border-bottom-0 border-right-0">
-					                <span class="font-weight-semibold">Esta a punto de elimnar una empresa de la lista de empresas</span>
-					                <button type="button" class="close" data-dismiss="alert">×</button>
-					            </div>
-
-								<h6 class="font-weight-semibold"><i class="icon-law mr-2"></i> Eliminacion de la empresa seleccionada</h6>
-								<p>La empresa seleccionada sera eliminada de forma permamanente del sistema informatico</p>
-
-								<hr>
-							</div>
-
-							<div class="modal-footer">
-								<button class="btn btn-link" data-dismiss="modal"><i class="icon-cross2 font-size-base mr-1"></i> Close</button>
-								<button class="btn bg-primary"><i class="icon-checkmark3 font-size-base mr-1"></i> Save</button>
-							</div>
-						</div>
-					</div>
-				</div>
+	            
 
 				<table class="table datatable-fixed-left" width="100%">
 						<thead>
 					        <tr>
-					            <th>Nombre de la Empresa</th>
-					            <th>Nombre Legal</th>
-					            <th>Representante Legal</th>
-					            <th>Número de Empleados</th>
-					            <th>Número de Acciones</th>
-					            <th>Nombre Accionista Mayor</th>
-					            <th>RCF Accionista Mayor</th>
-					            <th>Direccion Web</th>
-					            <th>Fundacion</th>
-					            <th>Descripción</th>
+					            <th>Nombre del Alumno</th>
+					            <th>Matricula</th>
+					            <th>Carrera</th>
+					            <th>Fecha de Nacimiento</th>
+					            <th>Edad</th>
+					            <th>Cuatrimestre</th>
+					            <th>Nombre del Tutor</th>
 					        </tr>
 					    </thead>
 					    <tbody>
 					        <tr>
-					            <td>Telmex</td>
-					            <td>Telmex Sa. de Cv.</td>
-					            <td>Telecomm Mexico Sa. de Cv.</td>
-					            <td>315,000</td>
-					            <td>1,847,652,000</td>
-					            <td>Slim Helu Carlos</td>
-					            <td>SHC56003EM3</td>
-					            <td>http://telmex.com</td>
-					            <td>13 de diciembre de 1976</td>
-					            <td>Distribución de servicios de telecomunicación</td>
+					            <td>Filezilla del Rio Peres</td>
+					            <td>1930781</td>
+					            <td>ITI</td>
+					            <td>31/01/01</td>
+					            <td>18</td>
+					            <td>1er</td>
+					            <td>Fierro</td>
 					        </tr>
 					        
 					        <tr>
-					            <td>GranD</td>
-					            <td>GranD Sa. de Cv.</td>
-					            <td>Charur Rodriguez Elias</td>
-					            <td>352</td>
-					            <td>500,000</td>
-					            <td>Charur Rodriguez Elias</td>
-					            <td>CRE59008TV0</td>
-					            <td>http://grand.com</td>
-					            <td>15 de agosto de 1995</td>
-					            <td>Cadena de Suministros</td>
+					            <td>Granada del Unguento Campil</td>
+					            <td>1930782</td>
+					            <td>ITI</td>
+					            <td>12/02/01</td>
+					            <td>18</td>
+					            <td>1er</td>
+					            <td>Fierro</td>
 					        </tr>
 
 					        <tr>
-					            <td>Delymundo</td>
-					            <td>Delymundo Sa. de Cv.</td>
-					            <td>Sierrano De La Garza Victor</td>
-					            <td>35</td>
-					            <td>157,000</td>
-					            <td>Cetura Ventura Esther</td>
-					            <td>VER96008AE0</td>
-					            <td>http://delymundo.com</td>
-					            <td>27 de agosto de 1997</td>
-					            <td>Empresa dedica a venta de pasteles de eventos</td>
+					            <td>Rey de los Reyes Reyes Reyes</td>
+					            <td>1930783</td>
+					            <td>ITI</td>
+					            <td>03/12/01</td>
+					            <td>18</td>
+					            <td>1er</td>
+					            <td>Fierro</td>
 					        </tr>
 
 					        <tr>
-					            <td>Facebook</td>
-					            <td>Facebook corp.</td>
-					            <td>Zuckerberg Mark</td>
-					            <td>235</td>
-					            <td>3,489,780,000</td>
-					            <td>BlackRock Corp.</td>
-					            <td>ROB66006TA0</td>
-					            <td>http://facebook.com</td>
-					            <td>13 de septiembre de 2004</td>
-					            <td>Conexiones en la web para venta de publicidad</td>
+					            <td>Angel Del Angel Del Angel</td>
+					            <td>1930784</td>
+					            <td>ITI</td>
+					            <td>12/08/01</td>
+					            <td>18</td>
+					            <td>1er</td>
+					            <td>Fierro</td>
 					        </tr>
 
 					        <tr>
-					            <td>BlackRock</td>
-					            <td>BlackRock Corp.</td>
-					            <td>Fink Laurence</td>
-					            <td>150,000</td>
-					            <td>15,520,000,000</td>
-					            <td>Fink Laurence</td>
-					            <td>FIL99008ES0</td>
-					            <td>http://blackrock.com</td>
-					            <td>23 de febrero de 1994</td>
-					            <td>Empresa dedica a la administración de actios</td>
+					            <td>Juan Jaison Jefferson</td>
+					            <td>1930785</td>
+					            <td>ITI</td>
+					            <td>16/09/99</td>
+					            <td>21</td>
+					            <td>1er</td>
+					            <td>Fierro</td>
 					        </tr>
+					    </tbody>
+					</table>
 
+				</div>
 				<!-- Data validation --
 				<div class="card">
 					<div class="card-header header-elements-inline">
@@ -1548,33 +1505,36 @@
 					</div>
 				</div>
 				<!-- /disable cell editing -->
+<!-- Iconified modal -->
+				<div id="modal_iconified" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title"><i class="icon-menu7 mr-2"></i> &nbsp;Eliminar Alumno</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
 
+							<div class="modal-body">
+								<div class="alert alert-info alert-dismissible alert-styled-left border-top-0 border-bottom-0 border-right-0">
+					                <span class="font-weight-semibold">Esta a punto de elimnar al alumno seleccionado del curso de la organización</span>
+					                <button type="button" class="close" data-dismiss="alert">×</button>
+					            </div>
+
+								<h6 class="font-weight-semibold"><i class="icon-law mr-2"></i> Eliminacion del alumno seleccionada</h6>
+								<p>El alumno seleccionado sera eliminada de forma permamanente del sistema informatico</p>
+
+								<hr>
+							</div>
+
+							<div class="modal-footer">
+								<button class="btn btn-link" data-dismiss="modal"><i class="icon-cross2 font-size-base mr-1"></i> Close</button>
+								<button class="btn bg-primary"><i class="icon-checkmark3 font-size-base mr-1"></i> Guardar</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- /content area -->
-
-
-			<!-- Footer --
-			<div class="navbar navbar-expand-lg navbar-light">
-				<div class="text-center d-lg-none w-100">
-					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
-						<i class="icon-unfold mr-2"></i>
-						Footer
-					</button>
-				</div>
-
-				<div class="navbar-collapse collapse" id="navbar-footer">
-					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
-					</span>
-
-					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
-						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /footer -->
 
 		</div>
 		<!-- /main content -->
